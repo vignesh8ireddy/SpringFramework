@@ -39,6 +39,11 @@ name explains the control take over of container from programmer over the spring
   * For creating pre-defined classes as spring beans using java annotations use @Configuation, @ComponentScan(basePackages="parent_directory") and @Bean(name="bean_id")
   * Use @Autowired in user-defined spring bean for injecting any spring bean(user-defined/pre-defined) into it.
 
+* To create a SpringFramework application, create a maven application and include spring-context-support dependency in the pom.xml file
+   which gets other dependencies (spring-context,spring core, spring beans, spring aop, spring jcl, spring expression)
+  <br> 
+  Or you can include all the above 7 jar files in a normal java application to make it as a spring framework application
+
 * Creating IOC container in spring framework:
 ```java
 AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(ConfigClass.class);
@@ -73,6 +78,7 @@ ComponentClass bean = applicationContext.getBean("bean_id",ComponentClass.class)
   2. Constructor Injection (Fast, because happens while creating object itself)
   <br>
   Note: At a time, @Autowired can be placed on only one parameterised constructor.
+  <br>
   3. Setter Injection (IOC container calls it, you don't have worry, but need write multiple setter methods for multiple injections)
   4. Arbitrary Method Injection (it is similar to setter injection but can have custom name,and likewise IOC container calls it with the dependant bean object)
 
@@ -107,9 +113,30 @@ ComponentClass bean = applicationContext.getBean("bean_id",ComponentClass.class)
     * @Lazy(true) along with @Component disables the eager-instantiation of the singleton scope beans
 
 * Stereotype annotations in Spring framework
+  * @Component, @Service, @Repository, @Controller, @Configuration
+  * These annotations make java classes as spring beans (components) and also some special classes specific to those annotations
 
 * Working with .properties file
-
+  * @PropertySource(value="path_of_properties_file") used along with @Component
+    * the address present value is searched inside src/main/resources directory
+  * @Value("${key}"/$"os.name"/"$Path") : field level annotation to inject values into variable like @Autowired
+  * Environment is spring bean class whose object get info from the configured properties file, system properties
+     and this Environment object can be injected to other spring beans using @Autowired, can be created using applicationContext.getEnvironment();
+  * getProperty() of Environment class
+  * @ImportResource("path_of_applicationContext.xml") used with @Configuration
+    * the path_of_applicationContext.xml is searched inside src/main/resources directory
+  
 * Dependency Lookup
 
 * The Spring Bean Life Cycle
+  * @PostConstruct configures a java method as spring bean init life cycle method
+  * @PreDestroy configures a java method as spring bean destroy life cycle method
+  * @PostConstruct and @PreDestroy are given by javax.annotation.api (jakarta.annotation.api)
+  > 1. Bean class Loading
+  > 2. Instantiation
+  > 3. Dependency Injections
+  > 4. PostConstruct
+  > 5. Business methods
+  > 6. PreDestroy
+  > 7. DeInstantiation (Garbage Collection)
+  > 8. Bean class Unloading
