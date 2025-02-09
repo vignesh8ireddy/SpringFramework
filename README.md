@@ -61,7 +61,7 @@ ComponentClass bean = applicationContext.getBean("bean_id",ComponentClass.class)
 > 1. @Component class: makes the java class as a spring bean
 > 2. @Bean method: makes the object return by the method as a spring bean
 > 3. @Configuration class: makes the java class as a configuration class and also a spring bean
-> 4. @ComponentScan: makes the IOC container to find for @Component classes to make them as spring beans
+> 4. @ComponentScan: makes the IOC container to find for @Component and other stereo annotations typed classes to make them as spring beans
 > 5. @Autowired: makes the IOC container to perform dependency injection of spring beans based upon HAS-A property
 > 6. @Qualifier: used with @Autowired when multiple components qualify for injection, autowiring happens based upon the id given in @Qualifier annotation.
 > <br> If @Qualifier is not used then IOC container throws NoUniqueBeanDefinitionException

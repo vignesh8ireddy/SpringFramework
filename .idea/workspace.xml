@@ -4,33 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dacdbce-94b2-43b3-8295-fdaf34aff544" name="Changes" comment="Add README.md">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aWishMessageGenerator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aWishMessageGenerator/src/main/java/com/vignesh/configuration/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aWishMessageGenerator/src/main/java/com/vignesh/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aWishMessageGenerator/src/main/java/com/vignesh/springbean/WishMessageGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bSeasonFinder/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bSeasonFinder/src/main/java/com/vignesh/configuration/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bSeasonFinder/src/main/java/com/vignesh/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bSeasonFinder/src/main/java/com/vignesh/springbean/SeasonFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cWorkingWithPropertiesFile/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cWorkingWithPropertiesFile/src/main/java/com/vignesh/configuration/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cWorkingWithPropertiesFile/src/main/java/com/vignesh/environment/EnvironmentDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cWorkingWithPropertiesFile/src/main/java/com/vignesh/main/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cWorkingWithPropertiesFile/src/main/java/com/vignesh/springbean/Package.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cWorkingWithPropertiesFile/src/main/java/com/vignesh/util/FedEx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cWorkingWithPropertiesFile/src/main/java/com/vignesh/util/ICourier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cWorkingWithPropertiesFile/src/main/java/com/vignesh/util/Ups.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cWorkingWithPropertiesFile/src/main/resources/app.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6dacdbce-94b2-43b3-8295-fdaf34aff544" name="Changes" comment="Add SpringFrame Examples, Update README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,24 +45,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "20",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\math\Documents\SpringFramework\cWorkingWithPropertiesFile\src\main\resources" />
@@ -113,7 +89,9 @@
       <workItem from="1738971524864" duration="52000" />
       <workItem from="1738984101860" duration="326000" />
       <workItem from="1738994805924" duration="2133000" />
-      <workItem from="1739032573418" duration="9577000" />
+      <workItem from="1739032573418" duration="10290000" />
+      <workItem from="1739045622625" duration="117000" />
+      <workItem from="1739046706199" duration="922000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md">
       <option name="closed" value="true" />
@@ -123,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738971410158</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add SpringFrame Examples, Update README.md">
+      <option name="closed" value="true" />
+      <created>1739042568342</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739042568342</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +118,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit by Vignesh" />
     <MESSAGE value="Add README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add README.md" />
+    <MESSAGE value="Add SpringFrame Examples, Update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add SpringFrame Examples, Update README.md" />
   </component>
 </project>
